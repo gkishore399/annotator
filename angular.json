@@ -35,6 +35,7 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -96,10 +97,15 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "/src/assets/js/angular-canvas-area-draw.js"
+            ]
           }
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "d49ca1d5-779e-4e86-a0d1-88e4fc1ec6ec"
   }
 }

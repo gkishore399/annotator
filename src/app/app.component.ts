@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
+  activePolygon:number=0
+  enabled:boolean=true
+  imageUrl='./assets/images/output.png'
+
+
+  
 }
