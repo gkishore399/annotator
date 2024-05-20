@@ -9,6 +9,9 @@ import { FormsModule } from '@angular/forms';
 import { TrailComponent } from './trail/trail.component';
 import { CanvasAreaDrawComponent } from './canvas-area-draw/canvas-area-draw.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+// import { ZoomableCanvasComponent } from '@durwella/zoomable-canvas';
+// import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
+import { NgxPanZoomModule } from 'ngx-panzoom'
 
 
 @NgModule({
@@ -17,12 +20,18 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     HeaderComponent,
     TrailComponent,
     CanvasAreaDrawComponent,
-    SidenavComponent
+    SidenavComponent,
+    
+  
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NgxPanZoomModule,
+  
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

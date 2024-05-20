@@ -1,24 +1,54 @@
-<p>canvas-area-draw works!</p>
+<!-- <p>canvas-area-draw works!</p>
 
 <input type="file" (change)="onFileSelected($event)" accept="image/*"> 
 <button (click)="onClickButton()">Save Polygon and Start New</button>
 <button (click)="onReset()">Reset</button>
 <button (click)="findpolygon()">label</button>
 <button (click)="drawretangle()">rectangles </button>
+<button (click)="zoomIn()">zoomIn</button>
+<button (click)="zoomOut()">zoomOut</button>
+
 
 
 
         <canvas  #drawingCanvas width="1000" height="700" style="border:1px solid black;" (mousedown)="mouseEvents($event)"
-        (mouseup)="mouseEvents($event)" (mousemove)="mouseEvents($event)" (click)="forLables($event)" (click)="forRectangels($event)"></canvas>
+        (mouseup)="mouseEvents($event)" (mousemove)="mouseEvents($event)" (click)="forLables($event)" (click)="forRectangels($event)"></canvas> -->
+       
+
+
+        <!-- image-zoom.component.html -->
+<!-- <canvas #drawingCanvas width="800" height="600" 
+
+(mousedown)="startPanning($event)" 
+(mouseup)="stopPanning($event)" 
+(mouseleave)="stopPanning($event)" 
+(mousemove)="panCanvas($event)"></canvas> -->
+
         <!-- <button (click)="downloadCanvas()">Download Image</button> -->
    
 
 <!-- <button (click)="onclickButon()">clickme</button> -->
 
 
+<p>canvas-area-draw works!</p>
 
+<input type="file" (change)="onFileSelected($event)" accept="image/*">
+<button (click)="onClickButton()">Save Polygon and Start New</button>
+<button (click)="onReset()">Reset</button>
+<button (click)="findpolygon()">Label</button>
+<button (click)="drawretangle()">Rectangles</button>
+<button (click)="zoomIn()">Zoom In</button>
+<button (click)="zoomOut()">Zoom Out</button>
 
-        
+<div class="canvas-container">
+  <canvas #drawingCanvas width="1000" height="800" style="border:1px solid black;"
+    (mousedown)="mouseEvents($event)"
+    (mouseup)="mouseEvents($event)"
+    (mousemove)="mouseEvents($event)"
+    (click)="forLables($event)"
+    (click)="forRectangels($event)">
+  </canvas>
+</div>
 
 
 

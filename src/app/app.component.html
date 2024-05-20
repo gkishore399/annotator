@@ -1,7 +1,16 @@
-<h1>this is awesome{{title}}</h1>
+<!-- <h1>this is awesome{{title}}</h1> -->
 
 
 <!-- <app-trail></app-trail> -->
 <app-canvas-area-draw  #appcanvas ></app-canvas-area-draw>
 <app-sidenav (requestEvent)="appcanvas.downloadCanvas()"></app-sidenav>
+<app-trail></app-trail>
 
+<!-- <zoomable-canvas 
+    [image]="image"
+    (topChange)="top = $event" (bottomChange)="bottom = $event" 
+    (leftChange)="left = $event" (rightChange)="right = $event"
+    [(centerX)]="centerX" [(centerY)]="centerY"
+    [(zoomLevel)]="zoomLevel" [maxZoom]="maxZoom" [minZoom]="0"
+    (canvasWidthChange)="canvasWidth = $event" (canvasHeightChange)="canvasHeight = $event"
+></zoomable-canvas> -->
