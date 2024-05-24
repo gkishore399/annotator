@@ -141,7 +141,7 @@ export class CanvasAreaDrawComponent implements AfterViewInit, OnInit {
 
     if (this.rectanglepointer) {
       this.mouse.rectangles = true;
-      console.log("inside rect");
+      console.log("inside rect code");
     }
   }
 

@@ -9,10 +9,13 @@ import { FormsModule } from '@angular/forms';
 import { TrailComponent } from './trail/trail.component';
 import { CanvasAreaDrawComponent } from './canvas-area-draw/canvas-area-draw.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-// import { ZoomableCanvasComponent } from '@durwella/zoomable-canvas';
-// import { ImageEditorModule } from '@syncfusion/ej2-angular-image-editor'
-import { NgxPanZoomModule } from 'ngx-panzoom'
-
+import { MultiPolygonComponent } from './multi-polygon/multi-polygon.component';
+import {NgOptimizedImage} from "@angular/common";
+import { HttpClientModule } from '@angular/common/http';
+import { AssignClassDialogComponent } from './dialogs/assign-class-dialog/assign-class-dialog.component';
+import { AnnotateComponent } from './annotate/annotate.component';
+import {ClickOutsideDirective} from "./click-outside.directive";
+import { CustomScrollDirective } from './custom-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -21,17 +24,18 @@ import { NgxPanZoomModule } from 'ngx-panzoom'
     TrailComponent,
     CanvasAreaDrawComponent,
     SidenavComponent,
-    
-  
-   
+    MultiPolygonComponent,
+    AssignClassDialogComponent,
+    AnnotateComponent,
+    CustomScrollDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    NgxPanZoomModule,
-  
-   
+    NgOptimizedImage,
+    HttpClientModule,
+    ClickOutsideDirective,
   ],
   providers: [],
   bootstrap: [AppComponent]
