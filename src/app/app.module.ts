@@ -16,6 +16,8 @@ import { AssignClassDialogComponent } from './dialogs/assign-class-dialog/assign
 import { AnnotateComponent } from './annotate/annotate.component';
 import {ClickOutsideDirective} from "./click-outside.directive";
 import { CustomScrollDirective } from './custom-scroll.directive';
+import { CreateProjectComponent } from './create-project/create-project.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { CustomScrollDirective } from './custom-scroll.directive';
     MultiPolygonComponent,
     AssignClassDialogComponent,
     AnnotateComponent,
-    CustomScrollDirective
+    CustomScrollDirective,
+    CreateProjectComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +39,7 @@ import { CustomScrollDirective } from './custom-scroll.directive';
     NgOptimizedImage,
     HttpClientModule,
     ClickOutsideDirective,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
